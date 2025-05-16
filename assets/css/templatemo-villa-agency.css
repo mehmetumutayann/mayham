@@ -221,16 +221,12 @@ Pre-loader Style
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.99);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   opacity: 1;
   visibility: visible;
   z-index: 9999;
-  -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
 
@@ -240,32 +236,106 @@ Pre-loader Style
   pointer-events: none;
 }
 
-@-webkit-keyframes dot {
-  50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
-  }
+/* Atom Preloader Animation */
+.atom {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
 }
 
-@keyframes dot {
-  50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
-  }
+.nucleus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #f35525;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite;
 }
 
-@-webkit-keyframes dots {
-  50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
-  }
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid rgba(243, 85, 37, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@keyframes dots {
-  50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
-  }
+.orbit-1 {
+  width: 60px;
+  height: 60px;
+  animation: rotate 3s linear infinite;
+}
+
+.orbit-2 {
+  width: 80px;
+  height: 80px;
+  animation: rotate 4s linear infinite reverse;
+}
+
+.orbit-3 {
+  width: 100px;
+  height: 100px;
+  animation: rotate 5s linear infinite;
+}
+
+.electron {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f35525;
+  border-radius: 50%;
+}
+
+.electron-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: orbit1 3s linear infinite;
+}
+
+.electron-2 {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  animation: orbit2 4s linear infinite;
+}
+
+.electron-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: orbit3 5s linear infinite;
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.2); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes rotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes orbit1 {
+  from { transform: translateX(-50%) rotate(0deg) translateX(30px) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+  from { transform: translateY(-50%) rotate(0deg) translateX(40px) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg) translateX(40px) rotate(-360deg); }
+}
+
+@keyframes orbit3 {
+  from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+  to { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
 }
 
 .preloader-inner {
