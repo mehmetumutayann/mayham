@@ -491,8 +491,16 @@ Header Style
   letter-spacing: 2px;
 }
 
-.background-header .main-nav .logo h1 {
-  line-height: 80px;
+/* Logo Image Styles */
+.header-area .main-nav .logo img {
+  height: 50px;
+  width: auto;
+  margin-top: 25px;
+  vertical-align: middle;
+}
+
+.background-header .main-nav .logo img {
+  margin-top: 15px;
 }
 
 .header-area .main-nav ul.nav {
@@ -800,7 +808,10 @@ Header Style
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  
+  .header-area .main-nav .logo img {
+    height: 40px;
+    margin-top: 20px;
+  }
 }
 
 /* 
