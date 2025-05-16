@@ -1,9 +1,3 @@
-/*
-
-Mayham Labsystems Website Scripts
-
-*/
-
 (function ($) {
 	
 	"use strict";

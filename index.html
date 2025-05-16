@@ -2,22 +2,22 @@
 <html lang="tr">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Mayham Labsystems - Akıllı Biyogüvenlik Kabini</title>
+    <title>Mayham - Akıllı Biyogüvenlik Kabini Entegrasyonu</title>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/mayham-styles.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="assets/css/mayham-styles.css">
   </head>
 
 <body>
@@ -215,8 +215,8 @@
 
   <div class="contact-content">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-7">
           <div class="row">
             <div class="col-lg-6">
               <div class="item phone">
@@ -231,6 +231,41 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="col-lg-5">
+          <form id="contact-form" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="name">Ad Soyad</label>
+                  <input type="name" name="name" id="name" placeholder="Adınız Soyadınız..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="email">E-posta Adresi</label>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-posta Adresiniz..." required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="subject">Konu</label>
+                  <input type="subject" name="subject" id="subject" placeholder="Konu..." autocomplete="on" >
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <label for="message">Mesaj</label>
+                  <textarea name="message" id="message" placeholder="Mesajınız"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="orange-button">Mesaj Gönder</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -252,6 +287,7 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/mayham-scripts.js"></script>
 
   </body>
 </html>
