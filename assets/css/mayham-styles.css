@@ -1414,6 +1414,22 @@ Contact Style
   position: relative;
 }
 
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.contact .section-heading {
+  position: relative;
+  z-index: 2;
+}
+
 .contact .section-heading h2 {
   color: #fff;
 }
@@ -1421,7 +1437,7 @@ Contact Style
 .contact-content {
   margin-top: -240px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .contact-content #map {
