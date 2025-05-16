@@ -122,5 +122,22 @@
 	});
     
 
+	// Sağ tık engeli
+	document.addEventListener('contextmenu', function(e) {
+		e.preventDefault();
+		return false;
+	});
+
+	// Metin seçimini engelle
+	document.addEventListener('selectstart', function(e) {
+		e.preventDefault();
+		return false;
+	});
+
+	// Sürükleme engeli
+	document.addEventListener('dragstart', function(e) {
+		e.preventDefault();
+		return false;
+	});
 
 })(window.jQuery);
