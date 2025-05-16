@@ -1543,18 +1543,21 @@ footer.footer-no-gap {
 }
 
 footer {
-  margin-top: 150px;
+  margin-top: 0;
   background-color: #1e1e1e;
-  min-height: 100px;
+  min-height: 60px;
   border-top: none;
+  padding: 0;
 }
 
 footer p {
   text-align: center;
-  line-height: 100px;
+  line-height: 60px;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 
 footer p a {
