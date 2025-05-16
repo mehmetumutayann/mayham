@@ -493,14 +493,14 @@ Header Style
 
 /* Logo Image Styles */
 .header-area .main-nav .logo img {
-  height: 90px;
+  height: 112px;
   width: auto;
-  margin-top: 5px;
+  margin-top: -5px;
   vertical-align: middle;
 }
 
 .background-header .main-nav .logo img {
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .header-area .main-nav ul.nav {
@@ -809,8 +809,8 @@ Header Style
     padding-right: 0px !important;
   }
   .header-area .main-nav .logo img {
-    height: 60px;
-    margin-top: 10px;
+    height: 75px;
+    margin-top: 5px;
   }
 }
 
